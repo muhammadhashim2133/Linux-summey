@@ -61,3 +61,60 @@ The system's main memory is divided into two sections: kernel space and user spa
 - `top`: Display running processes.
 - `su -`: Switch to the root user in the shell.
 - `shutdown`: Turn off the computer.
+# User Roles, SUDO, Command Completion, History, Scripting, File Permissions, and General Commands
+
+## User Roles and SUDO
+
+- `sudo su`: Logs in as the root user, allowing you to install packages using commands like `apt-get install python`.
+
+- `sudo apt-get install python`: With sudo, you can install packages without needing to switch to the root user.
+
+## Command Completion and History
+
+- To auto-complete a command, type the first few letters of the command and press `Tab` to complete it.
+
+- Use `Ctrl + A` to move the cursor to the beginning of the line and `Ctrl + E` to move the cursor to the end.
+
+## Scripting
+
+Scripts are used for repetitive tasks.
+- Create a new shell script file: `touch simple.sh`
+- Edit the script file: `vi simple.sh`
+- Press `i` to enter insert mode.
+- Write the first lines:
+  ```bash
+  #!/bin/bash
+  echo "My first name is: $1"
+  echo "My last name is: $2"
+# Linux Basics
+
+## File Permissions
+In Linux and Unix-like operating systems, file permissions determine access rights for files and directories. Each permission is represented by a numeric value:
+
+- 0: No permission
+- 1: Executable permission
+- 2: Write permission
+- 4: Read permission
+
+You can check permissions using the `ls -l` command and modify them using `chmod`.
+ls -l
+chmod 777 simple.sh
+./simple.sh hashim shabbir
+
+## General Commands
+
+- `uptime`: Displays the amount of time your system has been up.
+- `uname`: Shows information about the operating system.
+- `uname -srv`: Displays the operating system name, version, and release.
+- `man ls`: Displays comprehensive details about the mentioned command.
+- `pwd`: Shows the path of the current working directory.
+- `hostname`: Displays the hostname of the system.
+- `hostname -i`: Displays the IP address of the system.
+
+## Create Custom Commands
+`alias myfile="rouch myfile.txt` is a custome command that create myfile.txt
+
+
+
+
+
