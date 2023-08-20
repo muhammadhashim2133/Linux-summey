@@ -61,7 +61,7 @@ The system's main memory is divided into two sections: kernel space and user spa
 - `top`: Display running processes.
 - `su -`: Switch to the root user in the shell.
 - `shutdown`: Turn off the computer.
-# User Roles, SUDO, Command Completion, History, Scripting, File Permissions, and General Commands
+## User Roles, SUDO, Command Completion, History, Scripting, File Permissions, and General Commands
 
 ## User Roles and SUDO
 
@@ -86,7 +86,7 @@ Scripts are used for repetitive tasks.
   #!/bin/bash
   echo "My first name is: $1"
   echo "My last name is: $2"
-# Linux Basics
+
 
 ## File Permissions
 In Linux and Unix-like operating systems, file permissions determine access rights for files and directories. Each permission is represented by a numeric value:
